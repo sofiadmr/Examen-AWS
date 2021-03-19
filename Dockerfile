@@ -6,4 +6,4 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE ${PORT}
-CMD ["node", "index.js"]
+CMD ["node", "app.js"]
