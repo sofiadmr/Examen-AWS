@@ -1,14 +1,15 @@
 const express = require('express');
-const router = express.Router();
+const routers = express.Router();
 const path = require('path');
 
-router.get('/', (req, res)=>{
-    res.sendFile(path.join(__dirname,'public','view','index.html'));
+routers.get('/', (req, res)=>{
+    res.sendFile(path.join(__dirname,'../','public','index.html'));
+    //res.json({hola:'hola'});
 });
 
-router.get('/autor', (req, res)=>{
+routers.get('/autor', (req, res)=>{
     res.json({alumno:'SDMR'});
 });
 
 
-module.exports = router;
+module.exports = routers;

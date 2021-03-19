@@ -1,13 +1,12 @@
 //Declaracion de librerias a importar
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
-require('dotenv').config();
+
 // Se asignan los puertos o permisos para poder acceder
 const corsOptions = { origin: '*', optionsSuccessStatus: 200 }
 
 // Apuntar al archivo de rutas
-const router = require('./routes');
+const router = require('./routers');
 
 // Extraemos de express lo necesario
 const { json, urlencoded } = express
